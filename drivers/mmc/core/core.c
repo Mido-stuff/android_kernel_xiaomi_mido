@@ -3164,7 +3164,6 @@ int mmc_set_signal_voltage(struct mmc_host *host, int signal_voltage, u32 ocr)
 	err = mmc_wait_for_cmd(host, &cmd, 0);
 	if (err)
 
-		goto err_command;
 
 		goto power_cycle;
 
